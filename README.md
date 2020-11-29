@@ -5,7 +5,7 @@ Author: Wei Guo <a href="mailto:wei.parker.guo.sg@gmail.com">wei.parker.guo.sg@g
 
 Date of Initiation: 11/29/2020
 
-<small>\*The paper discussed here is under publishing process. A link will be provided for full text when it's officially published.</small>
+<sub><sup>\*The paper discussed here is under publishing process. A link will be provided for full text when it's officially published.</sup></sub>
 
 # Usage
 This is a platform independent cmake project. The executables are built using Visual Studio on the author's machine for Windows in 64 bits.
