@@ -16,5 +16,6 @@ An input image is required for the corrugator to procedurally generate patterns 
 Note: The image supplied will be read as a bitmap with color channels ignored. Color with brightness below 128/255 is considered black, white if above this value.
 
 # References
+Most of the codes in this implementation are referenced with inline comments. Some individual modules are referenced here.
 <li>tooljpeg jpeg encoder from <a href="https://create.stephan-brumme.com/toojpeg/">https://create.stephan-brumme.com/toojpeg/</a></li>
 <li>stb_image.h jpeg image loader from <a href="https://raw.githubusercontent.com/nothings/stb/master/stb_image.h">https://raw.githubusercontent.com/nothings/stb/master/stb_image.h</a></li>
