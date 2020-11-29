@@ -4,5 +4,7 @@
 #pragma once
 
 #include <iostream>
-
-// TODO: Reference additional headers your program requires here.
+#include <string>
+//image load pipeline
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"

@@ -7,6 +7,16 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	//take sample image directory
+	char img_f_buf[64];
+	printf("Enter sample corrugation layout img: ");
+	scanf_s("%s", img_f_buf, 64);
+	printf("Reading from %s ...", img_f_buf);
+
+	//read sample image
+	//code snippet referenced and edited from https://stackoverflow.com/questions/2076475/reading-an-image-file-in-c-c
+	int width, height, bpp;
+	uint8_t* rgb_image = stbi_load(img_f_buf, &width, &height, &bpp, 3);
+
 	return 0;
 }
