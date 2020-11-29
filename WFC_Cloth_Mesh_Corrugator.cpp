@@ -17,6 +17,10 @@ int main()
 	//code snippet referenced and edited from https://stackoverflow.com/questions/2076475/reading-an-image-file-in-c-c
 	int width, height, bpp;
 	uint8_t* rgb_image = stbi_load(img_f_buf, &width, &height, &bpp, 3);
+	//convert to bitmap
+	bitmap::bitmap bm;
+	bitmap::stb_image_to_bitmap(bm, rgb_image, width, height, 3);
+	printf("done.\n");
 
 	return 0;
 }

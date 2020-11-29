@@ -11,6 +11,7 @@ add_executable (WFC_Cloth_Mesh_Corrugator
 "WFC_Cloth_Mesh_Corrugator.h" 
 "toojpeg.cpp" 
 "toojpeg.h"
-"stb_image.h")
+"stb_image.h" 
+"bitmap.h")
 
 # TODO: Add tests and install targets if needed.
