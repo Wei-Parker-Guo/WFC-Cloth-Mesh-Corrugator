@@ -19,10 +19,6 @@ namespace preprocessor {
 		bool map[9];
 	};
 
-	//function to rotate a tile, clockwise by 90 degrees
-	void rotate(tile& o, tile& t);
-	//function to reflect a tile horizontally
-	void reflect(tile& o, tile& t);
 	//function to compare if a tile is equal to another
 	bool is_equal(tile& a, tile& b);
 	//function to compare if an adj rule is equal to another

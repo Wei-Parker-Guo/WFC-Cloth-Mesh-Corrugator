@@ -1,33 +1,5 @@
 #include "Preprocessor.h"
 
-//the utility functions are implemented for constant time ops
-void preprocessor::rotate(tile& o, tile& t) {
-	o.index = t.index;
-	o.map[0] = t.map[6];
-	o.map[1] = t.map[3];
-	o.map[2] = t.map[0];
-	o.map[3] = t.map[7];
-	o.map[4] = t.map[4];
-	o.map[5] = t.map[1];
-	o.map[6] = t.map[8];
-	o.map[7] = t.map[5];
-	o.map[8] = t.map[2];
-}
-
-//the utility functions are implemented for constant time ops
-void preprocessor::reflect(tile& o, tile& t) {
-	o.index = t.index;
-	o.map[0] = t.map[2];
-	o.map[1] = t.map[1];
-	o.map[2] = t.map[0];
-	o.map[3] = t.map[5];
-	o.map[4] = t.map[4];
-	o.map[5] = t.map[3];
-	o.map[6] = t.map[8];
-	o.map[7] = t.map[7];
-	o.map[8] = t.map[6];
-}
-
 bool preprocessor::is_equal(tile& a, tile& b) {
 	return a.map[0] == b.map[0] &&
 		a.map[1] == b.map[1]

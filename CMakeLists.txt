@@ -14,6 +14,8 @@ add_executable (WFC_Cloth_Mesh_Corrugator
 "stb_image.h" 
 "bitmap.h" 
 "Preprocessor.h" 
-"Preprocessor.cpp")
+"Preprocessor.cpp" 
+"WFC_Core.h" 
+"WFC_Core.cpp")
 
 # TODO: Add tests and install targets if needed.

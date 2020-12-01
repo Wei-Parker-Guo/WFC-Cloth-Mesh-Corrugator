@@ -13,7 +13,7 @@ This is a platform independent cmake project. The executables are built using Vi
 ## Input Image Formats
 An input image is required for the corrugator to procedurally generate patterns that are similar to it. It should represent the knitting pattern of desired cloth material, with white pixels indicating space and black indicating cloth fiber. The image could be either png or jpeg. You will be prompted in the console to supply this image's path.
 
-Note: The image supplied will be read as a bitmap with color channels ignored. Color with brightness below 128/255 is considered black, white if above this value.
+Note: The image supplied will be read as a bitmap with color channels ignored. Color with brightness below 128/255 is considered black, white if above this value. It should be relatively small since the algorithms process cells on a pixel basis, with a recommended size of below 128 x 128.
 
 # References
 Most of the codes in this implementation are referenced with inline comments. Some individual modules are referenced here.
