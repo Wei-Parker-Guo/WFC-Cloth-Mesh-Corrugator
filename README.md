@@ -15,6 +15,9 @@ An input image is required for the corrugator to procedurally generate patterns 
 
 Note: The image supplied will be read as a bitmap with color channels ignored. Color with brightness below 128/255 is considered black, white if above this value. It should be relatively small since the algorithms process cells on a pixel basis, with a recommended size of below 128 x 128.
 
+## Output Image Formats
+You will be prompted by the console to input the desired image diemension. Regardless of the original size, the generator will try to tile the entire bitmap with resonable patterns based on WFC. The format will be jpg with a compression rate of 90 in full color.
+
 # References
 Most of the codes in this implementation are referenced with inline comments. Some individual modules are referenced here.
 <li>tooljpeg jpeg encoder from <a href="https://create.stephan-brumme.com/toojpeg/">https://create.stephan-brumme.com/toojpeg/</a></li>
