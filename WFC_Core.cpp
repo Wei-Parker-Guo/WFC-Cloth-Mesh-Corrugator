@@ -54,9 +54,9 @@ int wfc_core::is_compatible(preprocessor::tile& core, preprocessor::tile& peri, 
 	//determine overlap matrix
 	overlap ol[6];
 	if (direction == 0) std::copy(std::begin(up_overlap), std::end(up_overlap), std::begin(ol));
-	if (direction == 1) std::copy(std::begin(right_overlap), std::end(right_overlap), std::begin(ol));
-	if (direction == 2) std::copy(std::begin(down_overlap), std::end(down_overlap), std::begin(ol));
-	if (direction == 3) std::copy(std::begin(left_overlap), std::end(left_overlap), std::begin(ol));
+	else if (direction == 1) std::copy(std::begin(right_overlap), std::end(right_overlap), std::begin(ol));
+	else if (direction == 2) std::copy(std::begin(down_overlap), std::end(down_overlap), std::begin(ol));
+	else if (direction == 3) std::copy(std::begin(left_overlap), std::end(left_overlap), std::begin(ol));
 
 	//compare orignals
 	if (is_same_in_overlap(core, peri, ol)) return 0;

@@ -23,7 +23,7 @@ bool preprocessor::is_in(std::vector<adj_rule>& rules, adj_rule& rule) {
 	return false;
 }
 
-void preprocessor::retrieve_tiles(std::vector<tile>& tiles, tile_pool& t_pool, bitmap::bitmap bm) {
+void preprocessor::retrieve_tiles(std::vector<tile>& tiles, tile_pool& t_pool, bitmap::bitmap& bm) {
 	int height = bm.size();
 	int width = bm[0].size();
 	for (int i = 0; i < height; i++) {

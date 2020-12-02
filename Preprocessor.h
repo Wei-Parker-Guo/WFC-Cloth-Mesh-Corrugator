@@ -27,7 +27,7 @@ namespace preprocessor {
 	bool is_in(std::vector<adj_rule>& rules, adj_rule& rule);
 
 	//function to retrieve a list of tiles from a bitmap including a map of tiles, updating each one's adj and freq rules as well
-	void retrieve_tiles(std::vector<tile>& tiles, tile_pool& t_pool, bitmap::bitmap bm);
+	void retrieve_tiles(std::vector<tile>& tiles, tile_pool& t_pool, bitmap::bitmap& bm);
 	//function to retrieve a list of tiles' adjaceny rules according to a cached tile map
 	void retrieve_adj_rules(std::vector<tile>& tiles, tile_pool& t_pool);
 }
