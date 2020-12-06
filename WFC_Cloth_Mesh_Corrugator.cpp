@@ -8,7 +8,6 @@ using namespace std;
 //****************************************************
 // Image IO Stuff
 //****************************************************
-
 std::ofstream out_file("result.jpg", std::ios_base::out | std::ios_base::binary); //out stream to save the rasterizer's image to
 
 void write_char(unsigned char byte) {
@@ -71,12 +70,18 @@ int main()
 	//generate WFC result
 	char width_buf[32];
 	char height_buf[32];
+    int gen_width = 64;
+    int gen_height = 64;
 	printf("Enter generate width: ");
 	scanf_s("%s", width_buf, 32);
 	printf("Enter generate height: ");
 	scanf_s("%s", height_buf, 32);
-	printf("Generating with dimensions %s x %s ...", width_buf, height_buf);
+	printf("Generating with dimensions %d x %d ...", gen_width, gen_height);
 	
+    //actual generation here
+    bitmap::bitmap out;
+    wfc_core::generate(out, bm, gen_width, gen_height);
+
 	printf("done.\n");
 
 	//write result

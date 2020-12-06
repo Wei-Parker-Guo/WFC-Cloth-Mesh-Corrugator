@@ -13,3 +13,4 @@
 #include "bitmap.h"
 //image write pipeline
 #include "toojpeg.h"
+#include "WFC_Core.h"

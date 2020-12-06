@@ -81,5 +81,21 @@ int wfc_core::is_compatible(preprocessor::tile& core, preprocessor::tile& peri, 
 }
 
 void wfc_core::generate(bitmap::bitmap& out, bitmap::bitmap& in, int width, int height) {
-	//42
+	//retrieve tiles with adj rules and freq rules
+	using namespace preprocessor;
+	std::vector<tile> tiles;
+	tile_pool pool;
+	retrieve_tiles(tiles, pool, in);
+	retrieve_adj_rules(tiles, pool);
+
+	//initialize out bitmap
+	for (int i = 0; i < height; i++) {
+		bitmap::pixel_row new_row(width, 0);
+		out.push_back(new_row);
+	}
+
+	//generate based on these rules
+	//[note]this part is omitted since it's private code
+	//the author, Wei Guo, will decide for its further release
+
 }
